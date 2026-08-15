@@ -581,7 +581,24 @@ body {
 
 </section>
 
+<audio id="bgMusic" src="music.mp3" preload="auto"></audio>
 
+<script>
+const music = document.getElementById("bgMusic");
+const openButton = document.querySelector(".open-button");
+
+if (openButton) {
+    openButton.addEventListener("click", function () {
+        music.currentTime = 165; // 2:45
+        music.play();
+
+        setTimeout(function () {
+            music.pause();
+            music.currentTime = 165;
+        }, 45000); // 播放45秒
+    });
+}
+</script>
 </body>
 
 </html>
