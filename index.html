@@ -314,6 +314,89 @@ body {
 
 }
 
+.couple-info {
+    text-align: center;
+    padding: 70px 25px;
+    background: #fff;
+}
+
+.couple-title,
+.parents-title {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.person {
+    margin-bottom: 25px;
+}
+
+.role {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.and {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    margin: 15px 0 30px;
+}
+
+.parents-title {
+    margin-top: 65px;
+    margin-bottom: 35px;
+}
+
+.parents {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.parent-group {
+    min-width: 180px;
+}
+
+.parent-role {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.parent-name {
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+@media (max-width: 600px) {
+
+    .couple-info {
+        padding: 60px 20px;
+    }
+
+    .name {
+        font-size: 27px;
+    }
+
+    .parents {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .parent-group {
+        min-width: auto;
+    }
+}
 </style>
 
 </head>
@@ -388,6 +471,41 @@ body {
 <section
     class="section"
     id="invitation">
+  <div class="couple-info">
+
+    <div class="couple-title">
+        THE COUPLE
+    </div>
+
+    <div class="person">
+        <div class="role">GROOM</div>
+        <div class="name">張永宜</div>
+    </div>
+
+    <div class="and">&amp;</div>
+
+    <div class="person">
+        <div class="role">BRIDE</div>
+        <div class="name">柯妮均</div>
+    </div>
+
+    <div class="parents-title">
+        OUR PARENTS
+    </div>
+
+    <div class="parents">
+        <div class="parent-group">
+            <div class="parent-role">男方主婚人</div>
+            <div class="parent-name">張耕寅、程玉霞</div>
+        </div>
+
+        <div class="parent-group">
+            <div class="parent-role">女方主婚人</div>
+            <div class="parent-name">柯居財、張秀玲</div>
+        </div>
+    </div>
+
+</div>
 
 
     <h2>
