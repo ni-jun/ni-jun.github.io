@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIJUN & YONGYI</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Times New Roman", "Noto Serif TC", serif;
+    background: #f8f6f2;
+    color: #333;
+}
+
+.cover {
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.cover-content {
+    max-width: 700px;
+}
+
+.small-title {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.names {
+    font-size: clamp(38px, 10vw, 72px);
+    letter-spacing: 5px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.date {
+    margin-top: 25px;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+.divider {
+    width: 45px;
+    height: 1px;
+    background: #999;
+    margin: 35px auto;
+}
+
+.open-button {
+    display: inline-block;
+    padding: 13px 30px;
+    border: 1px solid #777;
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+.open-button:hover {
+    background: #333;
+    color: white;
+}
+
+.message {
+    padding: 100px 25px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.message h2 {
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.message p {
+    line-height: 2;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    .names {
+        font-size: 42px;
+    }
+
+    .cover {
+        min-height: 600px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="cover">
+
+    <div class="cover-content">
+
+        <div class="small-title">
+            WE ARE GETTING MARRIED
+        </div>
+
+        <h1 class="names">
+            NIJUN & YONGYI
+        </h1>
+
+        <div class="divider"></div>
+
+        <div class="date">
+            20 DECEMBER 2026
+        </div>
+
+        <div class="divider"></div>
+
+        <a href="#invitation" class="open-button">
+            OPEN INVITATION
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="message" id="invitation">
+
+    <h2>OUR STORY</h2>
+
+    <div class="divider"></div>
+
+    <p>
+        Our story is just beginning.
+        <br>
+        We would love to share
+        this special day with you.
+    </p>
+
+</section>
+
+</body>
+</html>
