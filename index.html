@@ -320,20 +320,23 @@ body {
     background: #fff;
 }
 
+/* 每一個主要區塊 */
 .couple-title,
-.parents-title {
-    font-family: Georgia, serif;
-    font-size: 14px;
+.parents-title,
+.date-title,
+.time-title {
+    font-size: 13px;
     letter-spacing: 4px;
-    margin-bottom: 40px;
-}
-
-.person {
     margin-bottom: 25px;
 }
 
+/* 新人 */
+.person {
+    margin-bottom: 18px;
+}
+
 .role {
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 3px;
     color: #888;
     margin-bottom: 8px;
@@ -348,18 +351,20 @@ body {
 .and {
     font-family: Georgia, serif;
     font-size: 24px;
-    margin: 15px 0 30px;
+    margin: 18px 0 25px;
 }
 
+/* 主婚人 */
 .parents-title {
-    margin-top: 65px;
-    margin-bottom: 35px;
+    margin-top: 70px;
 }
 
 .parents {
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 80px;
+    padding-bottom: 65px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .parent-group {
@@ -369,7 +374,7 @@ body {
 .parent-role {
     font-size: 13px;
     letter-spacing: 2px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .parent-name {
@@ -378,6 +383,42 @@ body {
     line-height: 2;
 }
 
+/* 婚禮日期 */
+.wedding-date {
+    margin-top: 65px;
+    padding-bottom: 65px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.date-title {
+    margin-bottom: 18px;
+}
+
+.date-main {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.date-week {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* 宴客時間 */
+.time-title {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.time-main {
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+/* 手機版 */
 @media (max-width: 600px) {
 
     .couple-info {
@@ -390,11 +431,21 @@ body {
 
     .parents {
         flex-direction: column;
-        gap: 35px;
+        gap: 30px;
+        padding-bottom: 55px;
     }
 
     .parent-group {
         min-width: auto;
+    }
+
+    .wedding-date {
+        margin-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .date-main {
+        font-size: 22px;
     }
 }
 </style>
